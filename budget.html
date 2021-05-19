@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/af7c1bebca.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="budget.css">
+    <title>Budget app</title>
+</head>
+<body>
+    <div class='container'>
+        <h1>Budget app</h1>
+        <div  id='main-area'>
+            <figure id="input">
+                <div id="budget-input">
+                    <h4>Enter You Budget</h4>
+                    <input type='number' id="budget-form"></input>
+                    <button type='submit' id="budget-button">Enter</button>    
+                </div>
+                <div id="expense-input">
+                    <h4>Enter You Expense</h4>
+                    <input type='text' id="expense-form"></input>
+                    <h4>Enter You Expense Amount</h4>
+                    <input type='number' id="expense-a-form"></input>
+                    <button type='submit' id="expense-button">Add Expense</button>    
+                </div>
+            </figure>
+            <figure id='output'>
+                <div id="output-top">
+                    <div class="output-col">
+                        <h3>Budget</h3>
+                        <i class="fas fa-wallet"></i>
+                        <h2>$ <span id="budget-value">0</span></h2>
+                    </div>
+                    <div class="output-col">
+                        <h3>Expenses</h3>
+                        <i class="fas fa-money-bill-wave"></i>
+                        <h2>$ <span id="expenses-value">0</span></h2>
+                    </div>
+                    <div class="output-col">
+                        <h3>Balance</h3>
+                        <i class="fas fa-coins"></i>
+                        <h2>$ <span id="balance-value">0</span></h2>
+                    </div>
+                </div>
+                <div id="output-bot">
+                    <div class="headings">
+                        <div>
+                            <h5>Expense Title</h5>
+                        </div>
+                        <div>
+                            <h5>Expense Value</h5>
+                        </div>
+                        <div>
+                            
+                        </div>
+                    </div>
+                    <div id=e-items-area>
+
+                    </div>
+                </div>
+            </figure>    
+        </div>
+    </div>
+    <script src="./budget.js"></script>
+</body>
+</html>

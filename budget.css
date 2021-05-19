@@ -1,0 +1,240 @@
+@font-face {
+  font-family: Grenadier;
+  src: url("./GrenadierNF.ttf");
+}
+
+@font-face {
+  font-family: 'American Typewriter';
+  src: url("./American-Typewriter-Regular.ttf");
+}
+
+h1, h3 {
+  font-family: Grenadier, Montserrat, Arial;
+}
+
+h2, h4, h5 {
+  font-family: "American Typewriter", "Times NewS roman";
+}
+
+h1 {
+  font-size: 36px;
+  letter-spacing: 3px;
+}
+
+h2 {
+  font-size: 35px;
+}
+
+h3 {
+  font-size: 30px;
+}
+
+h4 {
+  font-size: 20px;
+}
+
+h5 {
+  font-size: 18px;
+  margin-bottom: 0px;
+}
+
+body {
+  background-color: #fff5ee;
+}
+
+input {
+  background-color: #F9F3D1;
+  border: 1px solid grey;
+}
+
+.container {
+  width: 90%;
+  max-width: 1600px;
+  margin: auto;
+}
+
+.error {
+  margin-bottom: 10px;
+  color: red;
+  text-transform: uppercase;
+}
+
+.error p {
+  display: inline;
+  font-family: "American Typewriter", "Times NewS roman";
+}
+
+figure {
+  margin: 0;
+}
+
+#main-area {
+  display: flex;
+}
+
+button, button:active {
+  margin-top: 2%;
+  width: 50%;
+  max-width: 200px;
+  background-color: #F9F3D1;
+  border: 1px black solid;
+  border-radius: 5px;
+  font-family: Grenadier, Montserrat, Arial;
+  font-size: 25px;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition-property: transform, border-bottom, border-right, margin-bottom;
+  transition-duration: 100ms;
+}
+
+button:hover {
+  transform: translate(-2px, -2px);
+  margin-bottom: -2px;
+  border-bottom: 3px black solid;
+  border-right: 3px  black solid;
+}
+
+button:active {
+  transform: none;
+  margin-bottom: none;
+  border-bottom: none;
+  border-right: none;
+  border: 1px black solid;
+}
+
+#input {
+  width: 40%;
+}
+
+#input > div {
+  display: flex;
+  flex-direction: column;
+}
+
+#budget-input, #expense-input, .expense-el {
+  padding: 2%;
+  margin-bottom: 5%;
+  border: 2px solid #FFE86D;
+  border-radius: 10px;
+}
+
+#output {
+  width: 60%;
+  padding: 0 4%;
+}
+
+#output * {
+  text-align: center;
+}
+
+#output-top i {
+  color: #FFB404;
+  font-size: 35px;
+}
+
+#output-top, .headings, .expense-el {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.expense-el {
+  margin: 15px 0;
+  font-family: "American Typewriter", "Times NewS roman";
+  font-size: 30px;
+}
+
+.expense-el .icons {
+  display: flex;
+  justify-content: space-evenly;
+  font-size: 20px;
+}
+
+.expense-el .icons i {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  transition-property: transform;
+  transition-duration: 100ms;
+}
+
+.expense-el .icons i:hover {
+  transform: translateY(-5px);
+}
+
+.expense-el .icons .fa-edit {
+  color: #6093A8;
+}
+
+.expense-el .icons .fa-trash-alt {
+  color: red;
+}
+
+.expense-el .icons .fa-check-square {
+  color: green;
+}
+
+@media (max-width: 1600px) {
+  h2 {
+    font-size: 28px;
+  }
+  .expense-el {
+    font-size: 22px;
+  }
+  .headings, .expense-el {
+    grid-template-columns: 2fr 2fr 1fr;
+  }
+}
+
+@media (max-width: 1200px) {
+  #main-area {
+    display: block;
+  }
+  #main-area figure {
+    padding: 0;
+  }
+  #input, #output {
+    width: 100%;
+  }
+}
+
+@media (max-width: 720px) {
+  .container {
+    width: 95%;
+  }
+  h2 {
+    font-size: 19px;
+  }
+  h3 {
+    font-size: 24px;
+  }
+  h5 {
+    font-size: 16px;
+  }
+  .expense-el {
+    font-size: 18px;
+  }
+  .expense-el input {
+    width: 120px;
+  }
+}
+
+@media (max-width: 480px) {
+  h2 {
+    font-size: 16px;
+  }
+  h3 {
+    font-size: 20px;
+  }
+  h5 {
+    font-size: 13px;
+  }
+  .expense-el {
+    font-size: 17px;
+  }
+  .expense-el input {
+    width: 85px;
+  }
+  .expense-el i {
+    font-size: 16px;
+  }
+}
